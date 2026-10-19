@@ -7,10 +7,7 @@
     <style>
         body {
             background-color: #000000;
-            color: #ffffff;
-            font-family: 'Arial', sans-serif;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -24,47 +21,45 @@
         }
 
         .photo {
-            max-width: 400px;
+            max-width: 600px;
             border-radius: 10px;
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+            display: block;
         }
 
-        /* Стрелка, указывающая прямо в ебало */
+        /* Стрелка, указывающая прямо в ебало сверху */
         .arrow {
             position: absolute;
-            bottom: 40px;
-            right: -120px;
-            font-size: 50px;
+            top: -50px; /* Поднимаем стрелку над фото */
+            left: 40%;
+            font-size: 60px;
             color: #ff0000;
-            transform: rotate(-20deg);
-            font-weight: bold;
+            transform: rotate(20deg);
             text-shadow: 2px 2px 5px #000;
         }
 
+        /* Надпись поверх фото */
         .text {
             position: absolute;
-            bottom: 10px;
-            right: -260px;
-            font-size: 24px;
+            top: 10px; /* Текст на самом верху */
+            left: 50%;
+            transform: translateX(-50%); /* Центрируем */
+            font-size: 30px;
             color: #ff0000;
+            font-family: 'Arial', sans-serif;
             font-weight: bold;
             text-transform: uppercase;
             white-space: nowrap;
-            text-shadow: 2px 2px 5px #000;
-            border: 2px solid #ff0000;
-            padding: 5px 15px;
-            background-color: rgba(0, 0, 0, 0.7);
+            text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* Обводка, чтоб читалось */
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <!-- Замени photo.jpg на имя твоего файла с картинкой, если оно другое -->
-        <img src="photo.jpg" alt="Фото" class="photo">
-        <!-- Стрелка (используем спецсимвол) -->
-        <div class="arrow">↖</div>
-        <!-- Надпись -->
+        <!-- Убедись, что файл называется photo.jpg и лежит рядом с этим html -->
+        <img src="photo.jpg" alt="ГЛАВНЫЙ СЫН ШЛЮХИ" class="photo">
+        
+        <div class="arrow">↙</div>
         <div class="text">ГЛАВНЫЙ СЫН ШЛЮХИ!</div>
     </div>
 
